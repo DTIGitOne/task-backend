@@ -1,10 +1,13 @@
 import express, {Router , Request, Response } from 'express';
 import Userrouter from './Routers/UserRouter';
+import cors from 'cors';
 
 const server = express();
-const port = 3000;
+const port = 8000;
 
 server.use(express.json());
+
+server.use(cors());
 
 server.use('/users', Userrouter);
 
