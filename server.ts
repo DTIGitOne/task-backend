@@ -2,7 +2,7 @@ import express, {Router , Request, Response } from 'express';
 import Userrouter from './Routers/UserRouter';
 
 const server = express();
-const port = 3000;
+const port = 8000;
 
 server.use(express.json());
 
